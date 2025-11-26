@@ -105,7 +105,7 @@ def main():
 
 
     # --- Main Area: Header ---
-    st.header("Welcome to Your Study Assistant!")
+    st.header("Welcome to Summarizer & Quiz Agent!")
     st.markdown("Upload your study notes (PDF) to get summaries, generate quizzes, and explore enhanced explanations.")
 
     # --- Initialization ---
@@ -322,8 +322,14 @@ def main():
 
     # --- Footer ---
     st.markdown("---")
-    st.markdown("*Study Notes Agent built with Streamlit & Google Gemini-cli*")
-    st.markdown("*Developed by Nida Khurram*")
+    st.markdown(
+        "<p style='text-align: center; color: gray;'>Study Notes Agent built with Streamlit & Google Gemini-cli</p>",
+        unsafe_allow_html=True
+    )
+    st.markdown(
+        "<p style='text-align: center; color: gray;'>Developed by Nida Khurram</p>",
+        unsafe_allow_html=True
+    )
 
 if __name__ == "__main__":
     main()
